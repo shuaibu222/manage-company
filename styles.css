@@ -148,6 +148,11 @@ p {
 .none {
   display: none;
 }
+@media (min-width: 47em) {
+  .none {
+    display: block;
+  }
+}
 
 /* Header Starts Here. */
 
