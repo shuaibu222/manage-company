@@ -1,3 +1,4 @@
+// Header DOM
 const btnHamburger = document.querySelector(".hamburger-icon");
 const body = document.querySelector("body");
 const header = document.querySelector(".header");
@@ -24,5 +25,30 @@ btnHamburger.addEventListener("click", function () {
       element.classList.remove("fade-out");
       element.classList.add("fade-in");
     });
+  }
+});
+
+// slider DOM
+const slider = document.querySelector(".testimonials");
+const navs = document.querySelectorAll(".navs");
+const cards = document.querySelectorAll(".card-parent");
+
+slider.addEventListener("click", function (e) {
+  const id = e.target.dataset.id;
+
+  if (id) {
+    navs.forEach(function (n) {
+      n.classList.remove("active");
+    });
+
+    e.target.classList.add("active");
+
+    cards.forEach(function (i) {
+      i.classList.add("none");
+    });
+
+    const element = document.getElementById(id);
+    element.classList.add("active");
+    element.classList.remove("none");
   }
 });
