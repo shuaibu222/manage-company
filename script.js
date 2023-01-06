@@ -1,6 +1,7 @@
 // Header DOM
-const btnHamburger = document.querySelector(".hamburger-icon");
+const html = document.querySelector("html");
 const body = document.querySelector("body");
+const btnHamburger = document.querySelector(".hamburger-icon");
 const header = document.querySelector(".header");
 const overlay = document.querySelector(".overlay");
 const fadeElems = document.querySelectorAll(".has-fade");
@@ -9,7 +10,7 @@ const menu = document.querySelector(".menu");
 btnHamburger.addEventListener("click", function () {
   if (header.classList.contains("open")) {
     // Close Hamburger Menu
-    body.classList.remove("no-scroll");
+    html.classList.remove("no-scroll");
     header.classList.remove("open");
     menu.classList.add("non-visible");
     fadeElems.forEach(function (element) {
@@ -18,7 +19,7 @@ btnHamburger.addEventListener("click", function () {
     });
   } else {
     // Open Hamburger Menu
-    body.classList.add("no-scroll");
+    html.classList.add("no-scroll");
     header.classList.add("open");
     menu.classList.remove("non-visible");
     fadeElems.forEach(function (element) {
