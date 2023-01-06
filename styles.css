@@ -144,7 +144,9 @@ p {
 }
 .active {
   display: block;
+  background: var(--bright-red);
 }
+
 .none {
   display: none;
 }
@@ -659,7 +661,7 @@ p {
   height: 0.7rem;
   border: 1px solid var(--bright-red);
   border-radius: 50%;
-  background: var(--very-light-gray);
+
   transition: all 250ms ease-in-out;
   cursor: pointer;
 }
