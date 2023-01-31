@@ -140,7 +140,7 @@ a {
 
 p {
   font-size: 0.9rem;
-  line-height: 1.7;
+  line-height: 1.8;
 }
 .active {
   display: block;
@@ -437,7 +437,7 @@ p {
 .features {
   display: flex;
   flex-direction: column;
-  gap: 2.7rem;
+  gap: 3rem;
   margin-top: 6rem;
   margin-bottom: 5rem;
 }
@@ -462,13 +462,19 @@ p {
 .row2 {
   display: flex;
   flex-direction: column;
-  gap: 2rem;
+  gap: 3rem;
 }
 
 .description {
   display: flex;
   flex-direction: column;
-  gap: 0.6rem;
+  gap: 0.9rem;
+}
+
+@media (min-width: 47em) {
+  .description {
+    gap: 0.6rem;
+  }
 }
 
 .description h3 {
@@ -478,13 +484,13 @@ p {
   font-size: 0.8rem;
   background: var(--very-pale-red);
   color: var(--dark-blue);
-  padding-top: 0.4rem;
-  padding-bottom: 0.4rem;
+  padding-top: 0.49rem;
+  padding-bottom: 0.49rem;
   border-top-left-radius: 0.9rem;
   border-bottom-left-radius: 0.9rem;
 }
 .description h3 span {
-  padding: 0.4rem 1.1rem;
+  padding: 0.49rem 1.1rem;
   border-radius: 0.9rem;
   background: var(--bright-red);
   margin-right: 0.6rem;
@@ -669,13 +675,15 @@ p {
 .slider span:hover {
   background: var(--bright-red);
 }
+
 @media (min-width: 47em) {
   .testimonials .slider {
     display: none;
   }
 }
 
-.testimonials a {
+.testimonials .a {
+  display: block;
   margin-top: 1rem;
   padding: 0.8rem 1.7rem 0.8rem 1.7rem;
   border-radius: 1.3rem;
@@ -684,16 +692,39 @@ p {
   box-shadow: 0px 7px 10px 0px rgba(0, 0, 0, 0.3);
   transition: all 250ms ease-in-out;
 }
-.testimonials a:hover {
+.testimonials .a:hover {
   background: salmon;
 }
-
 /* Advert section */
 
 .advert {
   min-height: 20vh;
   background: var(--bright-red);
   padding: 4rem 2rem;
+  position: relative;
+  overflow: hidden;
+}
+
+@media (max-width: 47em) {
+  .advert .desktop-img {
+    display: none;
+  }
+  .advert .mobile-img {
+    transform: rotate(360deg);
+    position: absolute;
+    top: 1.2rem;
+    left: -1rem;
+  }
+}
+@media (min-width: 47em) {
+  .advert .mobile-img {
+    display: none;
+  }
+  .advert .desktop-img {
+    position: absolute;
+    top: -9rem;
+    left: 10rem;
+  }
 }
 
 .advert-row {
