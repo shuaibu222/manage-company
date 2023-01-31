@@ -20,7 +20,7 @@
 
 ### Links
 
-- Live Site URL: [manage-company site](https://www.managementor.com)
+- Live Site URL: [https://manage-company.pages.dev/](https://manage-company.pages.dev/)
 
 ### Built with
 
