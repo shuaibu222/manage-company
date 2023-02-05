@@ -3,19 +3,23 @@
 @font-face {
   font-family: "Be Vietnam Pro";
   src: url("/assets/Be_Vietnam_Pro/BeVietnamPro-SemiBold.ttf");
+  font-display: swap;
 }
 @font-face {
   font-family: "Be Vietnam Pro";
   src: url("/assets/Be_Vietnam_Pro/BeVietnamPro-Bold.ttf");
+  font-display: swap;
 }
 @font-face {
   font-family: "Be Vietnam Pro";
   src: url("/assets/Be_Vietnam_Pro/BeVietnamPro-ExtraBold.ttf");
+  font-display: swap;
 }
 
 @font-face {
   font-family: "Be Vietnam Pro";
   src: url("/assets/Be_Vietnam_Pro/BeVietnamPro-Light.ttf");
+  font-display: swap;
 }
 
 /* Variables */
